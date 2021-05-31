@@ -20,7 +20,7 @@ public class TrainFunctionalityTest extends BaseTest{
 											mapData.get("Travel_Date"), mapData.get("Class_Type"));
 			childTest.pass("Travel Details Entered");
 			
-			trainsSelectionPage.selectTrain();
+			trainsSelectionPage.selectTrain(mapData.get("TrainNo"));
 			childTest.pass("Train Selected");
 			
 			trainsReviewPage.setTravellerDetailsAndReview(mapData.get("Full_Name"), mapData.get("Age"),
@@ -32,7 +32,7 @@ public class TrainFunctionalityTest extends BaseTest{
 			Assert.assertEquals(paymentPage.getPaymentAssertText(), "Payment options");
 		}catch(Exception e) {
 			e.printStackTrace();
-			Assert.fail();
+			Assert.fail(e.getLocalizedMessage());
 		}
 	}
 
@@ -51,7 +51,8 @@ public class TrainFunctionalityTest extends BaseTest{
 			
 			trainsPNRPage.clickCheckStatus();
 			Thread.sleep(5000);
-			Assert.assertEquals(trainsPNRPage.assertPnr(), "TRY DIFFERENT PNR");
+//			Assert.assertEquals(trainsPNRPage.assertPnr(), "TRY DIFFERENT PNR");
+			Assert.fail("Invalid PNR");
 		} catch(Exception e) {
 			e.printStackTrace();
 			Assert.fail();

@@ -18,7 +18,6 @@ public class VillasHomePage extends BasePage implements IVillasHomePageObject{
 	
 	public void clickCity() {
 		clickElement(cityBy);
-		waitForElementToBeClickable(driver, cityBy);
 		log.info("Clicking city");
 	}
 	

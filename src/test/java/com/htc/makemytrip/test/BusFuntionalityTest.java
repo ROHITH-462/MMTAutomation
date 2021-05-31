@@ -19,7 +19,7 @@ public class BusFuntionalityTest extends BaseTest{
 					mapData.get("Journey-Date"));
 			childTest.pass("Travel Details Entered");
 			
-			busSelectionPage.selectBus();
+			busSelectionPage.selectBus(mapData.get("TravelsName"), mapData.get("TravelTime"));
 			childTest.pass("Bus Selected");
 			
 			busReviewPage.setPassengerDetails(mapData.get("FullName"), mapData.get("Age"), 
@@ -29,7 +29,7 @@ public class BusFuntionalityTest extends BaseTest{
 			Assert.assertEquals(paymentPage.getPaymentAssertText(), "Payment options");
 		}catch (Exception e) {
 			e.printStackTrace();
-			Assert.fail();
+			Assert.fail(e.getLocalizedMessage());
 		}
 
 	}

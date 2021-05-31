@@ -72,9 +72,10 @@ public class TrainsHomePage extends BasePage implements ITrainsHomePageObject{
 		log.info("Selecting class");
 	}
 
-	public void clickSearchBtn() {
+	public void clickSearchBtn() throws Exception {
 		clickElement(searchBtnBy);
 		log.info("Clicking Search");
+		Thread.sleep(5000);
 	}
 
 

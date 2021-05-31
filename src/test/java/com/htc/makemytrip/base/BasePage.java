@@ -135,10 +135,36 @@ public class BasePage {
 		driver.findElement(By.xpath("(//li[text()=\""+timeValue+"\"])[2]"));
 	}
 	
+	
+	//---------------------------SELECTING TRAIN---------------------------------------------
+	
+	public void selectingTrain(String trainNo) {
+		driver.findElement(By.xpath("(//div[text()="+trainNo+"]/ancestor::div[@class='single-train-detail']/descendant::div[@class='card'])[2]")).click();
+	}
+	
+	//-----------------------------SELECTING HOTEL--------------------------------------------
+	
+	public void selectingHotel(String hotelName) {
+		driver.findElement(By.xpath("//span[contains(text(),\""+hotelName+"\")]")).click();
+	}
+	
+	//---------------------------SELECTING VILLA---------------------------------------------
+	
+	public void chooseResort(String villaName) {
+		driver.findElement(By.xpath("//span[text()=\""+villaName+"\"]")).click();
+	}
+	
+	//-----------------------------SELECTING BUS---------------------------------------------
+	
+	public void chooseBus(String travelsName, String travelTime) {
+		driver.findElement(By.xpath("//span[contains(text(),\""+travelsName+"\")]/ancestor::div[@class='makeFlex']/descendant::span[contains(text(),\""+travelTime+"\")]/ancestor::div[@class='makeFlex']/descendant::a[contains(text(),'Seats')]")).click();
+	}
+	
+	
 	//--------------------------------SELECT CAB MODEL(CABS)-------------------------------------------------
 	
 	public void selectCabModel(String carName) {
-		driver.findElement(By.xpath("//label[text()=\""+carName+"\"]"));
+		driver.findElement(By.xpath("//label[text()=\""+carName+"\"]")).click();
 	}
 
 	//---------------------------SELECTING CLASS TYPE(TRAIN)-------------------------------------------

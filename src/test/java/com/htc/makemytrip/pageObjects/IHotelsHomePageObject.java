@@ -6,7 +6,7 @@ public interface IHotelsHomePageObject {
 	
 	 By cityBy = By.id("city");
 	 By cityTxtBoxBy = By.xpath("//input[@placeholder=\"Enter city/ Hotel/ Area/ Building\"]");
-	 By citySuggesstionBy = By.xpath("(//li[@data-section-index=\"0\"])[1]");
+	 By citySuggesstionBy = By.cssSelector("li[data-suggestion-index='0']");
 	 By checkInDateBy = By.id("checkin");
 	 By checkOutDateBy = By.id("checkout");
 	 By roomsAndGuestsBy = By.id("guest");

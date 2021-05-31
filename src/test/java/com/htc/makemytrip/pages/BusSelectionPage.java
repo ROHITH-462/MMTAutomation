@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import com.htc.makemytrip.base.BasePage;
+import com.htc.makemytrip.exception.BusNotAvailableException;
 import com.htc.makemytrip.exception.MyException;
 import com.htc.makemytrip.pageObjects.IBusSelectionPageObject;
 
@@ -21,9 +22,14 @@ public class BusSelectionPage extends BasePage implements IBusSelectionPageObjec
 		
 	}
 	
-	public void clickSelectSeats() {
-		clickElement(selectSeatsBtnBy);
+	public void clickSelectSeats(String travelsName, String travelTime) throws BusNotAvailableException {
+		try {
+//		clickElement(selectSeatsBtnBy);
+		chooseBus(travelsName, travelTime);
 		log.info("Clicking Selecting Seat");
+		}catch (Exception e) {
+			throw new BusNotAvailableException("Bus Not Available " + e.getMessage());
+		}
 	}
 	
 	public void selectPickUpPoint() {
@@ -49,14 +55,11 @@ public class BusSelectionPage extends BasePage implements IBusSelectionPageObjec
 		log.info("Clicking Book Seats");
 	}
 	
-	public void selectBus() throws MyException {
+	public void selectBus(String travelsName, String travelTime) throws MyException {
 		try {
-		scrollUntilYBM();
-		Thread.sleep(2000);
-		clickSelectSeats();
-		Thread.sleep(2000);
+//		scrollUntilYBM();
+		clickSelectSeats(travelsName, travelTime);
 		selectPickUpPoint();
-		Thread.sleep(2000);
 		selectDropDownPoint();
 		selectSeat();
 		clickBookSeat();

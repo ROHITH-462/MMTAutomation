@@ -20,9 +20,10 @@ public class HotelsHomePage extends BasePage implements IHotelsHomePageObject{
 		log.info("city is clicked");
 	}
 	
-	public void setCity(String city) {
+	public void setCity(String city) throws Exception {
 		waitForVisibilityOfElementLocatable(driver, cityTxtBoxBy);
 		setData(cityTxtBoxBy, city);
+		Thread.sleep(2000);
 		clickElement(citySuggesstionBy);
 		log.info("City is entered");
 	}

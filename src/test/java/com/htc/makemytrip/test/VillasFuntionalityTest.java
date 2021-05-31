@@ -21,7 +21,7 @@ public class VillasFuntionalityTest extends BaseTest{
 												mapData.get("Children"));
 			childTest.pass("Travel Details Entered");
 			
-			villasSelectionPage.selectVilla();
+			villasSelectionPage.selectVilla(mapData.get("VillaName"));
 			childTest.pass("Selecting a Resort");
 			
 			villasBookingPage.bookAVilla();

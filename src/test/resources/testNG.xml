@@ -7,20 +7,20 @@
 	</listeners>
 	<test name="MakeMyTrip WebPage Functionality Test">
 		<classes>
-			<class name="com.htc.makemytrip.test.NewAccountCreationTest" />
-			<class name="com.htc.makemytrip.test.LoginTest" /> 
-			<class name="com.htc.makemytrip.test.FlightFunctionalityTest" />
-			<class name="com.htc.makemytrip.test.HotelFunctionalityTest" />
-			<class name="com.htc.makemytrip.test.VillasFuntionalityTest" />
-			<class name="com.htc.makemytrip.test.TrainFunctionalityTest">
+			<!-- <class name="com.htc.makemytrip.test.NewAccountCreationTest" /> -->
+			<!-- <class name="com.htc.makemytrip.test.LoginTest" /> --> 
+			<!--  <class name="com.htc.makemytrip.test.FlightFunctionalityTest" /> -->
+			<!--  <class name="com.htc.makemytrip.test.HotelFunctionalityTest" /> -->
+			<!-- <class name="com.htc.makemytrip.test.VillasFuntionalityTest" /> -->
+			<!-- <class name="com.htc.makemytrip.test.TrainFunctionalityTest">
 				<methods>
-					<include name="checkPnrTest" />
+					<exclude name="checkPnrTest" />
 					<include name="bookATrainTickectTest" />
 				</methods>
-			</class>
-			<class name="com.htc.makemytrip.test.BusFuntionalityTest" />
-			<class name="com.htc.makemytrip.test.CabFuntionalityTest" />
-			<class name="com.htc.makemytrip.test.HolidayFunctionalityTest" />
+			</class> -->
+			 <!-- <class name="com.htc.makemytrip.test.BusFuntionalityTest" /> -->
+			 <class name="com.htc.makemytrip.test.CabFuntionalityTest" />
+			<!-- <class name="com.htc.makemytrip.test.HolidayFunctionalityTest" /> -->
 		</classes>
 	</test>
-</suite>
+</suite>	

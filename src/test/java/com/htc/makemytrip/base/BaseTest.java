@@ -119,6 +119,7 @@ public class BaseTest {
 			driver = new EdgeDriver();
 		}
 		
+		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(pfl.url);
 		
@@ -170,7 +171,7 @@ public class BaseTest {
 
 	@AfterClass
 	public void tearDown() throws MyException {
-		driver.quit();
+//		driver.quit();
 		log.info("Driver closed");
 	}
 	

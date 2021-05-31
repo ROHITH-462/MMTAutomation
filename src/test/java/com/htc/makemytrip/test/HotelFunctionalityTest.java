@@ -20,7 +20,7 @@ public class HotelFunctionalityTest extends BaseTest {
 											 mapData.get("Children"));
 			childTest.pass("Travel Details Entered");
 			
-			hotelsSelectionPage.selectHotel();
+			hotelsSelectionPage.selectHotel(mapData.get("HotelName"));
 			childTest.pass("Selecting a Hotel");
 			
 			hotelsReviewPage.reviewDetails(mapData.get("FirstName"), mapData.get("LastName"), 

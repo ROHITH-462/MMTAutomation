@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="MakeMyTrip WebPage Functionality Test(failed)">
     <classes>
-      <class name="com.htc.makemytrip.test.FlightFunctionalityTest">
+      <class name="com.htc.makemytrip.test.CabFuntionalityTest">
         <methods>
+          <include name="bookACabTest" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="flightTicketBookingTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.htc.makemytrip.test.FlightFunctionalityTest -->
+      </class> <!-- com.htc.makemytrip.test.CabFuntionalityTest -->
     </classes>
   </test> <!-- MakeMyTrip WebPage Functionality Test(failed) -->
 </suite> <!-- Failed suite [com.htc.makemytrip] -->

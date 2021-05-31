@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.htc.makemytrip.base.BasePage;
 import com.htc.makemytrip.exception.MyException;
+import com.htc.makemytrip.exception.TrainNotAvailableException;
 import com.htc.makemytrip.pageObjects.ITrainsSelectionPageObject;
 
 public class TrainsSelectionPage extends BasePage implements ITrainsSelectionPageObject{
@@ -15,10 +16,14 @@ public class TrainsSelectionPage extends BasePage implements ITrainsSelectionPag
 		super(driver);
 	}
 
-	public void clickToUpdate() throws InterruptedException {
-		Thread.sleep(2000);
-		clickElement(selectTrainBy);
-		log.info("Clicking update");		
+	public void trainSelection(String trainNo) throws Exception {
+		try {
+		selectingTrain(trainNo);
+		Thread.sleep(3000);
+		log.info("Clicking update");
+		} catch (Exception e) {
+			throw new TrainNotAvailableException("Train Not Available " + e.getMessage());
+		}
 	}
 
 	public void selectClass() {
@@ -26,10 +31,9 @@ public class TrainsSelectionPage extends BasePage implements ITrainsSelectionPag
 		log.info("Clicking again update");
 	}
 
-	public void selectTrain() throws MyException {
+	public void selectTrain(String trainNo) throws MyException {
 		try {
-			clickToUpdate();
-			Thread.sleep(3000);
+			trainSelection(trainNo);
 //			selectClass();
 		} catch(Exception e) {
 			throw new MyException(e.getMessage());
