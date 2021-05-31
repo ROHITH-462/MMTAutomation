@@ -19,7 +19,7 @@
 				</methods>
 			</class> -->
 			 <!-- <class name="com.htc.makemytrip.test.BusFuntionalityTest" /> -->
-			 <class name="com.htc.makemytrip.test.CabFuntionalityTest" />
+			 <!-- <class name="com.htc.makemytrip.test.CabFuntionalityTest" /> -->
 			<!-- <class name="com.htc.makemytrip.test.HolidayFunctionalityTest" /> -->
 		</classes>
 	</test>
