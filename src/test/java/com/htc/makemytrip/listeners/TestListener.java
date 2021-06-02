@@ -9,7 +9,6 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
 import com.htc.makemytrip.base.BaseTest;
-import com.htc.makemytrip.propertyfileloader.PropertyFileLoader;
 import com.htc.makemytrip.reports.ExtentManager;
 import com.htc.makemytrip.utility.ScreenShot;
 
@@ -27,12 +26,8 @@ public class TestListener extends BaseTest implements ITestListener{
 		Object testClass = result.getInstance();
 		WebDriver driver = ((BaseTest)testClass).getDriver();
 		System.out.println("Method passed " + result.getName());
-		try {
-			PropertyFileLoader pfl = PropertyFileLoader.getInstance();
-			ScreenShot.screenShot(driver, result.getMethod().getMethodName(), pfl.passFilePath);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		PropertyFileLoader pfl = PropertyFileLoader.getInstance();
+		ScreenShot.screenShot(driver, result.getMethod().getMethodName(), ScreenShot.createNewPassFolder());
 		childTest.log(Status.PASS, "Test Passed");
 	}
 
@@ -42,8 +37,8 @@ public class TestListener extends BaseTest implements ITestListener{
 		WebDriver driver = ((BaseTest)testClass).getDriver();
 		System.out.println("Method failed " + result.getName());
 		try {
-			PropertyFileLoader pfl = PropertyFileLoader.getInstance();
-			String imgPath = ScreenShot.screenShot(driver, result.getMethod().getMethodName(), pfl.failFilePath);
+//			PropertyFileLoader pfl = PropertyFileLoader.getInstance();
+			String imgPath = ScreenShot.screenShot(driver, result.getMethod().getMethodName(), ScreenShot.createNewFailFolder());
 			System.out.println(imgPath);
 			childTest.log(Status.FAIL, "Test Failed ");
 			childTest.log(Status.FAIL, result.getThrowable());

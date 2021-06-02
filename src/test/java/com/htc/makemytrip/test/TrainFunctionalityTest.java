@@ -40,7 +40,7 @@ public class TrainFunctionalityTest extends BaseTest{
 	@Test(dataProvider = "Data", dataProviderClass = com.htc.makemytrip.utility.DataProviderManager.class)
 	public void checkPnrTest(Map<String, String> mapData) {
 		try {
-			test = extent.createTest("checkPnrTest");
+
 			childTest = test.createNode("Verifying PNR");
 			
 			indexPage.clickTrainsBtn();
@@ -55,7 +55,7 @@ public class TrainFunctionalityTest extends BaseTest{
 			Assert.fail("Invalid PNR");
 		} catch(Exception e) {
 			e.printStackTrace();
-			Assert.fail();
+			Assert.fail(e.getMessage());
 		}
 
 	}

@@ -25,7 +25,7 @@ public class LoginTest extends BaseTest{
 			Assert.assertEquals(homePage.userName(), "Hey Rohith");
 		} catch (Exception e) {
 			e.printStackTrace();
-			Assert.fail();
+			Assert.fail(e.getMessage());
 		}
 	}
 

@@ -39,7 +39,7 @@ public class FlightFunctionalityTest extends BaseTest{
 		}catch (Exception e) {
 			e.printStackTrace();
 			e.getMessage();
-			Assert.fail();
+			Assert.fail(e.getMessage());
 		}
 	}
 

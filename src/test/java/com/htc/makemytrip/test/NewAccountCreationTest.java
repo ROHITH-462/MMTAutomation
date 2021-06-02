@@ -29,7 +29,7 @@ public class NewAccountCreationTest extends BaseTest{
 			
 		} catch(Exception e) {
 			e.printStackTrace();
-			Assert.fail();
+			Assert.fail(e.getMessage());
 		}
 	}
 }

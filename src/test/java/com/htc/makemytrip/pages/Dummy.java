@@ -1,5 +1,6 @@
 package com.htc.makemytrip.pages;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -9,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.htc.makemytrip.propertyfileloader.PropertyFileLoader;
+import com.htc.makemytrip.utility.ScreenShot;
 
 public class Dummy {
 	
@@ -31,13 +33,38 @@ public class Dummy {
 //		WebElement date = driver.findElement(By.xpath("//div[text()='Date']"));
 //		date.sendKeys("23");
 		
-
-			String dateFromExcel = "14/June/2021";
-			String[] split = dateFromExcel.split("/");
-			System.out.println("Date = " +split[0]);
-			System.out.println("Month = "+split[1]);
-			System.out.println("Year = "+split[2]);
+//
+//			String dateFromExcel = "14/June/2021";
+//			String[] split = dateFromExcel.split("/");
+//			System.out.println("Date = " +split[0]);
+//			System.out.println("Month = "+split[1]);
+//			System.out.println("Year = "+split[2]);
 		
+		
+		
+		String fileSeparators = System.getProperty("file.separator");
+		String folderLocation = System.getProperty("user.dir")+fileSeparators+"ScreenShot";
+		String timeStampFolderLocation = folderLocation+fileSeparators+ScreenShot.timeStamp();
+		String passFolderLocation = timeStampFolderLocation+fileSeparators+"Pass";
+		String failFolderLocation = timeStampFolderLocation+fileSeparators+"Fail";
+		
+		File passDirectory = new File(passFolderLocation);
+		File failDirectory = new File(failFolderLocation);
+		
+		File testDirectory = new File(timeStampFolderLocation);
+		if(!testDirectory.exists()) {
+			if(testDirectory.mkdir()) {
+				System.out.println("ScreenShot Directory: " + timeStampFolderLocation + " is created");
+				passDirectory.mkdir();
+				failDirectory.mkdir();
+			}else {
+				System.out.println("Failed to create directory " + timeStampFolderLocation);
+			}
+		}else {
+			System.err.println("Directory already exists " + timeStampFolderLocation);
+			passDirectory.mkdir();
+			failDirectory.mkdir();
+		}
 	}
 
 }

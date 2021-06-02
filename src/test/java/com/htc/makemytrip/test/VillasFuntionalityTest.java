@@ -32,7 +32,7 @@ public class VillasFuntionalityTest extends BaseTest{
 			Assert.assertEquals(paymentPage.getPaymentAssertText(), "Payment options");	
 		}catch (Exception e) {
 			e.printStackTrace();
-			Assert.fail();
+			Assert.fail(e.getMessage());
 		}
 	}
 

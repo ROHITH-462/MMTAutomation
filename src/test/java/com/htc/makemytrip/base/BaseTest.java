@@ -46,6 +46,8 @@ import com.htc.makemytrip.pages.VillasReviewPage;
 import com.htc.makemytrip.pages.VillasSelectionPage;
 import com.htc.makemytrip.propertyfileloader.PropertyFileLoader;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseTest {
 	
 	Logger log = Logger.getLogger(BaseTest.class);
@@ -104,18 +106,21 @@ public class BaseTest {
 			options.addArguments("--disable-notifications");
 			options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
 			
-			System.setProperty("webdriver.chrome.driver", pfl.chromeDriver);
+//			System.setProperty("webdriver.chrome.driver", pfl.chromeDriver);
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 			log.info("---------------- Launching chrome browser -----------------");
 		}
 		
 		else if(pfl.browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", pfl.firefoxDriver);
+//			System.setProperty("webdriver.gecko.driver", pfl.firefoxDriver);
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		
 		else if(pfl.browserName.equalsIgnoreCase("edge")) {
-			System.setProperty("webdriver.edge.driver", pfl.edgeDriver);
+//			System.setProperty("webdriver.edge.driver", pfl.edgeDriver);
+			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
 		
