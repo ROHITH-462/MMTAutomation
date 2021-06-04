@@ -15,6 +15,7 @@ public class CabTripDetailsPage extends BasePage implements ICabTripDetailsPageO
 	}
 	
 	public void scrollUntilInclusions() {
+		waitForVisibilityOfElementLocatable(driver, scrollUntilInclusionsBy);
 		scrollToVisibleElement(scrollUntilInclusionsBy, driver);
 	}
 	
@@ -34,7 +35,7 @@ public class CabTripDetailsPage extends BasePage implements ICabTripDetailsPageO
 		log.info("Selecting Pick Up Address From DropDown");
 	}
 	
-	public void setTravellerDetails(String travellerName, String travellerEmail, String travellerMobileNo) {
+	public void setTravellerDetails(String travellerName, String travellerEmail, String travellerMobileNo) throws InterruptedException {
 		setData(travellerNameBy, travellerName);
 		log.info("Setting Traveller Name");
 		
@@ -46,12 +47,13 @@ public class CabTripDetailsPage extends BasePage implements ICabTripDetailsPageO
 		
 		setData(travellerMobileNoBy, travellerMobileNo);
 		log.info("Setting Traveller Mobile No");
-		
+		Thread.sleep(4000);		
 	}
 	
-	public void clickPayNow() {
+	public void clickPayNow() throws InterruptedException {
 		clickElement(payBy);
 		log.info("Clicking Pay Now");
+		Thread.sleep(5000);
 	}
 	
 	public void setTravelDetails(String address, String travellerName, String travellerEmail, 
@@ -62,7 +64,6 @@ public class CabTripDetailsPage extends BasePage implements ICabTripDetailsPageO
 		setPickUpAddress(address);
 		selectPickUpAddress();
 		setTravellerDetails(travellerName, travellerEmail, travellerMobile);
-		Thread.sleep(1000);
 		clickPayNow();
 		}catch (Exception e) {
 			throw new MyException(e.getMessage());

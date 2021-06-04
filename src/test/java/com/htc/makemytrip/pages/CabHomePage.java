@@ -16,6 +16,7 @@ public class CabHomePage extends BasePage implements ICabHomePageObject {
 	}
 	
 	public void clickRoundTrip() {
+		waitForElementToBeClickable(driver, roundTripBy);
 		clickElement(roundTripBy);
 		log.info("Clicking Round Trip");
 	}
@@ -84,15 +85,12 @@ public class CabHomePage extends BasePage implements ICabHomePageObject {
 		clickElement(dropTimeBy);
 		setDropDownTimeCab(dropDownTime);
 		log.info("Clicking DropDown Time");
-		
-		clickElement(setDropTimeBy);
-		log.info("Setting DropDown Time");
 	}
 	
 	public void clickSearch() throws Exception {
 		clickElement(searchBy);
-		log.info("Clicking Search");
 		Thread.sleep(5000);
+		log.info("Clicking Search");
 	}
 	
 	public void setTravelDetails(String fromCity, String toCity, String deptDate, 

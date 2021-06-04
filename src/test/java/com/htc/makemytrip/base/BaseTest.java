@@ -1,6 +1,9 @@
 package com.htc.makemytrip.base;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -102,6 +105,9 @@ public class BaseTest {
 		if(pfl.browserName.equalsIgnoreCase("chrome")) {
 			
 			ChromeOptions options = new ChromeOptions();
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("profile.default_content_setting_values.notifications", 2);
+			options.setExperimentalOption("prefs", prefs);
 			options.setExperimentalOption("excludeSwitches", new String[] {"disable-popup-blocking"});
 			options.addArguments("--disable-notifications");
 			options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
@@ -176,7 +182,7 @@ public class BaseTest {
 
 	@AfterClass
 	public void tearDown() throws MyException {
-//		driver.quit();
+		driver.quit();
 		log.info("Driver closed");
 	}
 	

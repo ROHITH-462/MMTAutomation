@@ -16,6 +16,7 @@ public class HotelsHomePage extends BasePage implements IHotelsHomePageObject{
 	}
 
 	public void clickCity() {
+		waitForElementToBeClickable(driver, cityBy);
 		clickElement(cityBy);
 		log.info("city is clicked");
 	}

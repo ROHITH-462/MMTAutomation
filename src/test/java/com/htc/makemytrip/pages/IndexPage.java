@@ -2,6 +2,7 @@ package com.htc.makemytrip.pages;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.htc.makemytrip.base.BasePage;
 import com.htc.makemytrip.exception.MyException;
@@ -13,6 +14,17 @@ public class IndexPage extends BasePage implements IIndexPageObject{
 	
 	public IndexPage(WebDriver driver) {
 		super(driver);
+	}
+	
+	public void clickMMTLogo() throws InterruptedException {
+//		Thread.sleep(5000);
+//		scrollToVisibleElement(makemyTripBy, driver);
+//		System.out.println("Scrolling done");
+//		clickElement(makemyTripBy);
+		WebElement mmtLogo = driver.findElement(makemyTripBy);
+		clickUsingJavaScript(mmtLogo, driver);
+
+		log.info("Clicking MMT Logo");
 	}
 
 	public void clickCreateAccBtn() {

@@ -14,7 +14,7 @@ public class TrainFunctionalityTest extends BaseTest{
 		try {
 
 			childTest = test.createNode("Booking A Train Ticket");
-			
+			indexPage.clickMMTLogo();
 			indexPage.clickTrainsBtn();
 			trainsHomePage.setTravelDetails(mapData.get("From_City"), mapData.get("To_City"),
 											mapData.get("Travel_Date"), mapData.get("Class_Type"));
@@ -42,7 +42,7 @@ public class TrainFunctionalityTest extends BaseTest{
 		try {
 
 			childTest = test.createNode("Verifying PNR");
-			
+			indexPage.clickMMTLogo();
 			indexPage.clickTrainsBtn();
 			trainsHomePage.clickPnrRadioBtn();
 			

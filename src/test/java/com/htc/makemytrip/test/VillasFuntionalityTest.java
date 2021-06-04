@@ -14,6 +14,7 @@ public class VillasFuntionalityTest extends BaseTest{
 		try {
 			
 			childTest = test.createNode("Book a Resort @ Maldives");
+			indexPage.clickMMTLogo();
 			indexPage.clickVillasBtn();
 			
 			villasHomePage.bookingVillasDetails(mapData.get("City"), mapData.get("Checkin-Date"),
@@ -27,9 +28,9 @@ public class VillasFuntionalityTest extends BaseTest{
 			villasBookingPage.bookAVilla();
 			villasReviewPage.reviewVilla(mapData.get("FirstName"), mapData.get("LastName"),
 					mapData.get("Email"), mapData.get("MobileNo"));
-			childTest.pass("Review Trvaeller Details and Navigating To Payment Page");
+			childTest.pass("Review Traveler Details and Navigating To Payment Page");
 			
-			Assert.assertEquals(paymentPage.getPaymentAssertText(), "Payment options");	
+			Assert.assertEquals(paymentPage.assertPaymentVilla(), "Other Payment options");	
 		}catch (Exception e) {
 			e.printStackTrace();
 			Assert.fail(e.getMessage());

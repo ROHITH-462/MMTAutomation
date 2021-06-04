@@ -13,6 +13,7 @@ public class HotelFunctionalityTest extends BaseTest {
 	public void bookAHotelTest(Map<String, String> mapData) throws InterruptedException {
 		try {
 			childTest = test.createNode("Book a Hotel @ Goa");
+			indexPage.clickMMTLogo();
 			indexPage.clickHotelsBtn();
 			
 			hotelsHomePage.setBookingDetails(mapData.get("City"), mapData.get("Checkin-Date"),

@@ -1,155 +1,51 @@
-2021-06-02 14:30:18,394  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:30:34,391  INFO [main] IndexPage:20 - Clicking Create Account
-2021-06-02 14:30:35,363  INFO [main] RegistrationPage:20 - Setting Mobile No
-2021-06-02 14:30:36,005  INFO [main] RegistrationPage:25 - Clicking Continue
-2021-06-02 14:30:51,310  INFO [main] RegistrationPage:36 - Clicking Verify
-2021-06-02 14:30:57,672  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:31:00,571  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:31:10,462  INFO [main] IndexPage:20 - Clicking Create Account
-2021-06-02 14:31:16,013  INFO [main] LoginPage:21 - Setting email id or mobile no
-2021-06-02 14:31:16,272  INFO [main] LoginPage:26 - Clicking continue method
-2021-06-02 14:31:36,695  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:31:39,741  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:31:52,419  INFO [main] IndexPage:25 - Clicking Flight
-2021-06-02 14:31:54,245  INFO [main] FlightHomePage:24 - Clikcing From City
-2021-06-02 14:31:54,656  INFO [main] FlightHomePage:30 - Setting From City
-2021-06-02 14:31:55,999  INFO [main] FlightHomePage:36 - Selecting From Suggestion
-2021-06-02 14:31:56,438  INFO [main] FlightHomePage:47 - Setting To City
-2021-06-02 14:31:57,411  INFO [main] FlightHomePage:53 - Selecting To Suggestion
-2021-06-02 14:31:57,775  INFO [main] FlightHomePage:67 - Setting Date
-2021-06-02 14:31:58,125  INFO [main] FlightHomePage:78 - Selecting Travelling Class
-2021-06-02 14:31:58,882  INFO [main] FlightHomePage:83 - Setting Travelling Class and Passengers
-2021-06-02 14:31:59,029  INFO [main] FlightHomePage:88 - Clicking Apply
-2021-06-02 14:32:16,702  INFO [main] FlightHomePage:94 - Clciking Search
-2021-06-02 14:32:16,958  INFO [main] FlightSelectionPage:21 - Scrolled until Alliances and Airlines Text
-2021-06-02 14:32:19,001  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:32:23,715  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:32:35,399  INFO [main] IndexPage:30 - Clicking Hotel
-2021-06-02 14:32:35,836  INFO [main] HotelsHomePage:20 - city is clicked
-2021-06-02 14:32:39,097  INFO [main] HotelsHomePage:28 - City is entered
-2021-06-02 14:32:39,513  INFO [main] HotelsHomePage:39 - Setting checkin date
-2021-06-02 14:32:40,340  INFO [main] HotelsHomePage:50 - Setting checkout date
-2021-06-02 14:32:40,997  INFO [main] HotelsHomePage:55 - Clicking rooms and guests
-2021-06-02 14:32:41,549  INFO [main] HotelsHomePage:60 - Setting rooms and guests
-2021-06-02 14:32:41,737  INFO [main] HotelsHomePage:65 - Clicking apply button
-2021-06-02 14:32:53,888  INFO [main] HotelsHomePage:70 - Clicking search button
-2021-06-02 14:32:59,110  INFO [main] HotelsSelectionPage:24 - Clicking hotel
-2021-06-02 14:33:17,384  INFO [main] HotelsSelectionPage:33 - Switching driver to another tab
-2021-06-02 14:33:18,162  INFO [main] HotelsSelectionPage:38 - Clicking book this now
-2021-06-02 14:33:19,884  INFO [main] HotelsReviewPage:21 - Scrolling till guest details
-2021-06-02 14:33:20,515  INFO [main] HotelsReviewPage:26 - Setting firstname
-2021-06-02 14:33:20,745  INFO [main] HotelsReviewPage:31 - Setting lastname
-2021-06-02 14:33:21,418  INFO [main] HotelsReviewPage:36 - Setting email
-2021-06-02 14:33:21,835  INFO [main] HotelsReviewPage:41 - Setting mobileNo
-2021-06-02 14:33:22,272  INFO [main] HotelsReviewPage:46 - Clicking Paynow
-2021-06-02 14:33:45,760  INFO [main] PaymentPage:21 - Asserting payment text
-2021-06-02 14:33:48,242  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:33:55,299  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:34:09,952  INFO [main] IndexPage:35 - Clicking Villa
-2021-06-02 14:34:11,482  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:34:16,974  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:34:33,597  INFO [main] IndexPage:45 - Clicking Train
-2021-06-02 14:34:38,646  INFO [main] TrainsHomePage:20 - Clicking PNR
-2021-06-02 14:34:40,244  INFO [main] TrainsPNRPage:19 - PNR No entered
-2021-06-02 14:34:45,726  INFO [main] TrainsPNRPage:24 - Check button is clicked
-2021-06-02 14:34:56,633  INFO [main] IndexPage:45 - Clicking Train
-2021-06-02 14:34:59,283  INFO [main] TrainsHomePage:25 - Clicking From City
-2021-06-02 14:34:59,939  INFO [main] TrainsHomePage:30 - Setting From City
-2021-06-02 14:35:02,895  INFO [main] TrainsHomePage:35 - Slecting from Suggestion
-2021-06-02 14:35:03,779  INFO [main] TrainsHomePage:45 - Clicking to city
-2021-06-02 14:35:06,238  INFO [main] TrainsHomePage:50 - Selection to suggestion
-2021-06-02 14:35:07,234  INFO [main] TrainsHomePage:61 - Setting date
-2021-06-02 14:35:07,742  INFO [main] TrainsHomePage:72 - Selecting class
-2021-06-02 14:35:53,109  INFO [main] TrainsHomePage:77 - Clicking Search
-2021-06-02 14:36:01,801  INFO [main] TrainsSelectionPage:23 - Clicking update
-2021-06-02 14:36:05,234  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:36:20,481  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:37:07,918  INFO [main] IndexPage:51 - Clicking Bus
-2021-06-02 14:37:15,811  INFO [main] BusHomePage:20 - Clicking From City
-2021-06-02 14:37:20,200  INFO [main] BusHomePage:25 - Setting From City
-2021-06-02 14:37:23,294  INFO [main] BusHomePage:30 - Selecting From Suggestion
-2021-06-02 14:37:24,706  INFO [main] BusHomePage:40 - Setting To City
-2021-06-02 14:37:28,425  INFO [main] BusHomePage:46 - Selection To Suggestiion
-2021-06-02 14:37:30,355  INFO [main] BusHomePage:58 - Setting Date
-2021-06-02 14:38:17,089  INFO [main] BusHomePage:63 - Clicking Search
-2021-06-02 14:38:20,650  INFO [main] BusSelectionPage:29 - Clicking Selecting Seat
-2021-06-02 14:38:23,459  INFO [main] BusSelectionPage:38 - Clicking Pickup Point
-2021-06-02 14:38:25,058  INFO [main] BusSelectionPage:44 - Selecting DropDown Point
-2021-06-02 14:38:26,344  INFO [main] BusSelectionPage:49 - Selecting Seat
-2021-06-02 14:38:31,981  INFO [main] BusSelectionPage:55 - Clicking Book Seats
-2021-06-02 14:38:34,517  INFO [main] BusReviewPage:20 - Setting Name
-2021-06-02 14:38:38,441  INFO [main] BusReviewPage:25 - Setting Age
-2021-06-02 14:38:41,540  INFO [main] BusReviewPage:30 - Clicking Gender
-2021-06-02 14:38:43,143  INFO [main] BusReviewPage:35 - Selecting Male
-2021-06-02 14:38:46,069  INFO [main] BusReviewPage:40 - Setting Email
-2021-06-02 14:38:47,832  INFO [main] BusReviewPage:45 - Setting Mobile No
-2021-06-02 14:38:49,424  INFO [main] BusReviewPage:50 - Selecting Trip Insurance
-2021-06-02 14:38:55,059  INFO [main] BusReviewPage:56 - Clicking Book Now
-2021-06-02 14:39:23,607  INFO [main] PaymentPage:21 - Asserting payment text
-2021-06-02 14:39:25,655  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:39:35,318  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:40:10,794  INFO [main] IndexPage:61 - Clicking Cab
-2021-06-02 14:40:15,567  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:40:22,076  INFO [main] BaseTest:112 - ---------------- Launching chrome browser -----------------
-2021-06-02 14:40:52,395  INFO [main] IndexPage:40 - Clicking Holiday
-2021-06-02 14:41:04,551  INFO [main] HolidaysHomePage:20 - Clicking from city
-2021-06-02 14:41:05,926  INFO [main] HolidaysHomePage:25 - Setting from city
-2021-06-02 14:41:08,694  INFO [main] HolidaysHomePage:30 - Selecting from suggestion
-2021-06-02 14:41:10,918  INFO [main] HolidaysHomePage:40 - Setting to city
-2021-06-02 14:41:13,657  INFO [main] HolidaysHomePage:45 - Selecting to city from suggestion
-2021-06-02 14:41:41,105  INFO [main] HolidaysHomePage:50 - Clicking on search
-2021-06-02 14:41:51,188  INFO [main] BaseTest:180 - Driver closed
-2021-06-02 14:41:52,376 DEBUG [main] cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:52,387 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
-2021-06-02 14:41:52,396 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
-2021-06-02 14:41:52,397 DEBUG [main] cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
-2021-06-02 14:41:55,356 DEBUG [main] cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:55,359 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
-2021-06-02 14:41:55,361 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
-2021-06-02 14:41:55,363 DEBUG [main] cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
-2021-06-02 14:41:55,370 DEBUG [main] cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:55,374 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
-2021-06-02 14:41:55,376 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
-2021-06-02 14:41:55,377 DEBUG [main] cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
-2021-06-02 14:41:55,573 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:55,574 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
-2021-06-02 14:41:55,576 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
-2021-06-02 14:41:55,577 DEBUG [main] cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
-2021-06-02 14:41:55,758 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:55,759 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
-2021-06-02 14:41:55,761 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
-2021-06-02 14:41:55,761 DEBUG [main] cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
-2021-06-02 14:41:55,936 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:55,943 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:55,948 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:55,956 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:55,968 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:55,972 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:55,979 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:55,987 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:56,030 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:56,033 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
-2021-06-02 14:41:56,037 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:56,039 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
-2021-06-02 14:41:56,040 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
-2021-06-02 14:41:56,041 DEBUG [main] cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
-2021-06-02 14:41:56,057 DEBUG [main] cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:56,059 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
-2021-06-02 14:41:56,060 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
-2021-06-02 14:41:56,061 DEBUG [main] cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
-2021-06-02 14:41:56,127 DEBUG [main] cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:56,130 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
-2021-06-02 14:41:56,131 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
-2021-06-02 14:41:56,132 DEBUG [main] cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
-2021-06-02 14:41:56,221 DEBUG [main] cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:56,223 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
-2021-06-02 14:41:56,225 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
-2021-06-02 14:41:56,225 DEBUG [main] cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
-2021-06-02 14:41:56,295 DEBUG [main] cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:56,296 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
-2021-06-02 14:41:56,299 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
-2021-06-02 14:41:56,302 DEBUG [main] cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
-2021-06-02 14:41:56,563 DEBUG [main] cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
-2021-06-02 14:41:56,564 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
-2021-06-02 14:41:56,566 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
-2021-06-02 14:41:56,567 DEBUG [main] cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2021-06-04 17:02:31,774  INFO [main] BaseTest:118 - ---------------- Launching chrome browser -----------------
+2021-06-04 17:03:06,590  INFO [main] IndexPage:27 - Clicking MMT Logo
+2021-06-04 17:03:11,248  INFO [main] IndexPage:32 - Clicking Create Account
+2021-06-04 17:03:17,599  INFO [main] LoginPage:21 - Setting email id or mobile no
+2021-06-04 17:03:18,364  INFO [main] LoginPage:26 - Clicking continue method
+2021-06-04 17:03:39,068  INFO [main] LoginPage:26 - Clicking continue method
+2021-06-04 17:03:56,223  INFO [main] BaseTest:186 - Driver closed
+2021-06-04 17:03:56,368 DEBUG [main] cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:56,392 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2021-06-04 17:03:56,404 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2021-06-04 17:03:56,407 DEBUG [main] cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2021-06-04 17:03:57,186 DEBUG [main] cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,188 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2021-06-04 17:03:57,190 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2021-06-04 17:03:57,191 DEBUG [main] cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2021-06-04 17:03:57,200 DEBUG [main] cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,204 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2021-06-04 17:03:57,206 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2021-06-04 17:03:57,208 DEBUG [main] cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2021-06-04 17:03:57,241 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,247 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2021-06-04 17:03:57,251 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2021-06-04 17:03:57,252 DEBUG [main] cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2021-06-04 17:03:57,313 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,315 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2021-06-04 17:03:57,317 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2021-06-04 17:03:57,319 DEBUG [main] cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2021-06-04 17:03:57,459 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,463 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2021-06-04 17:03:57,465 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2021-06-04 17:03:57,467 DEBUG [main] cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2021-06-04 17:03:57,517 DEBUG [main] cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,520 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2021-06-04 17:03:57,521 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2021-06-04 17:03:57,522 DEBUG [main] cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2021-06-04 17:03:57,549 DEBUG [main] cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,551 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2021-06-04 17:03:57,553 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2021-06-04 17:03:57,559 DEBUG [main] cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2021-06-04 17:03:57,608 DEBUG [main] cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,610 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2021-06-04 17:03:57,614 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2021-06-04 17:03:57,616 DEBUG [main] cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2021-06-04 17:03:57,626 DEBUG [main] cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,628 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2021-06-04 17:03:57,629 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2021-06-04 17:03:57,630 DEBUG [main] cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2021-06-04 17:03:57,654 DEBUG [main] cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2021-06-04 17:03:57,656 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2021-06-04 17:03:57,657 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2021-06-04 17:03:57,658 DEBUG [main] cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/DELL/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"

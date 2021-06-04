@@ -22,8 +22,17 @@ public class PaymentPage extends BasePage implements IPaymentPageObject{
 		return getText(paymentOptionsBy);
 		} catch (Exception e) {
 			throw new MyException(e.getMessage());
+		}		
+	}
+	
+	public String assertPaymentVilla() throws MyException {
+		try {
+			waitForVisibilityOfElementLocatable(driver, otherPaymentBy);
+			log.info("Other Payment Text Asserted");
+			return getText(otherPaymentBy);
+		} catch (Exception e) {
+			throw new MyException("Assertion Error " + e.getMessage());
 		}
-		
 		
 	}
 	

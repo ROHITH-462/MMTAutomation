@@ -13,7 +13,7 @@ public class BusFuntionalityTest extends BaseTest{
 	public void bookABusTicketTest(Map<String, String> mapData) throws InterruptedException {
 		try {
 			childTest = test.createNode("Book A Bus Test");
-			
+			indexPage.clickMMTLogo();
 			indexPage.clickBusesBtn();
 			busHomePage.setTravelDetails(mapData.get("From-City"), mapData.get("To-City"),
 					mapData.get("Journey-Date"));

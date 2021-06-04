@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 public interface ICabTripDetailsPageObject {
 	
 	By scrollUntilInclusionsBy = By.xpath("//span[text()='(Included in the Price) ']");
+	By okBy = By.xpath("//a[text()=' OK ']");
 	By payBy = By.cssSelector(".cabPaymentCont");
 	By pickUpAddressBy = By.cssSelector("input[placeholder='Enter exact pick-up address/nearby location / building name']");
 	By pickUpAddressTextBy = By.cssSelector(".react-autosuggest__input");

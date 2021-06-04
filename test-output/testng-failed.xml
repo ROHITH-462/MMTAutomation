@@ -4,51 +4,8 @@
   <listeners>
     <listener class-name="com.htc.makemytrip.listeners.TestListener"/>
   </listeners>
-  <test thread-count="5" name="MakeMyTrip WebPage Functionality Test(failed)">
+  <test thread-count="5" parallel="classes" name="MakeMyTrip WebPage Functionality Test(failed)">
     <classes>
-      <class name="com.htc.makemytrip.test.CabFuntionalityTest">
-        <methods>
-          <include name="bookACabTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.htc.makemytrip.test.CabFuntionalityTest -->
-      <class name="com.htc.makemytrip.test.TrainFunctionalityTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="checkPnrTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="bookATrainTickectTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.htc.makemytrip.test.TrainFunctionalityTest -->
-      <class name="com.htc.makemytrip.test.HolidayFunctionalityTest">
-        <methods>
-          <include name="bookAHolidayTripTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.htc.makemytrip.test.HolidayFunctionalityTest -->
-      <class name="com.htc.makemytrip.test.FlightFunctionalityTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="flightTicketBookingTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.htc.makemytrip.test.FlightFunctionalityTest -->
-      <class name="com.htc.makemytrip.test.LoginTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="loginTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.htc.makemytrip.test.LoginTest -->
-      <class name="com.htc.makemytrip.test.NewAccountCreationTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="registrationTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.htc.makemytrip.test.NewAccountCreationTest -->
       <class name="com.htc.makemytrip.test.VillasFuntionalityTest">
         <methods>
           <include name="setUp"/>

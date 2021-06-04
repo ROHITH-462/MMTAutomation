@@ -13,6 +13,7 @@ import java.util.Locale;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -67,6 +68,13 @@ public class BasePage {
 	public void scrollToVisibleElement(By scrollLink, WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", driver.findElement(scrollLink));
+	}
+	
+	//---------------------CLICKING USING JAVASCRIPT------------------
+	
+	public void clickUsingJavaScript(WebElement element, WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
 	}
 
 
@@ -128,18 +136,30 @@ public class BasePage {
 	//-----------------------PICKUP TIME AND DROPDOWN TIME(CABS)----------------------------------
 	
 	public void setPickUpTimeCab(String timeValue) {
-		driver.findElement(By.xpath("(//li[text()=\""+timeValue+"\"])[1]"));
+		driver.findElement(By.xpath("(//li[text()=\""+timeValue+"\"])[1]")).click();
 	}
 	
 	public void setDropDownTimeCab(String timeValue) {
-		driver.findElement(By.xpath("(//li[text()=\""+timeValue+"\"])[2]"));
+		driver.findElement(By.xpath("(//li[text()=\""+timeValue+"\"])[2]")).click();
 	}
 	
 	
 	//---------------------------SELECTING TRAIN---------------------------------------------
 	
 	public void selectingTrain(String trainNo) {
-		driver.findElement(By.xpath("(//div[text()="+trainNo+"]/ancestor::div[@class='single-train-detail']/descendant::div[@class='card'])[2]")).click();
+		driver.findElement(By.xpath("(//div[text()="+trainNo+"]/ancestor::div[@class='single-train-detail']/descendant::div[@class='card'])[1]")).click();
+	}
+	
+	//-----------------------------TICKET STATUS---------------------------------------------
+	
+	public String ticketStatus(String trainNo) {
+		return driver.findElement(By.xpath("(//div[text()="+trainNo+"]/ancestor::div[@class='single-train-detail']/descendant::div[@class='card']/descendant::div[@class='update-info'])[1]")).getText();
+	}
+	
+	//-----------------------------TRAIN AVAILABILITY-----------------------------------------
+	
+	public String trainAvailablity(String trainNo) {
+		return driver.findElement(By.xpath("(//div[text()="+trainNo+"]/ancestor::div[@class='single-train-detail']/descendant::div[@class='card']/descendant::div[@class='availibilty-info'])[1]")).getText();
 	}
 	
 	//-----------------------------SELECTING HOTEL--------------------------------------------
@@ -165,6 +185,12 @@ public class BasePage {
 	
 	public void selectCabModel(String carName) {
 		driver.findElement(By.xpath("//label[text()=\""+carName+"\"]")).click();
+	}
+	
+	//--------------------------------CAB AVAILABLITY-----------------------------------------
+	
+	public String cabAvailability() {
+		return driver.findElement(By.xpath("//div[@class='cabBookDetails makeFlex column textRight']/descendant::a[contains(@class,'appendBottom10')]/span")).getText();
 	}
 
 	//---------------------------SELECTING CLASS TYPE(TRAIN)-------------------------------------------
@@ -194,7 +220,7 @@ public class BasePage {
 		try {
 			driver.findElement(By.xpath("//span[text()=\""+value+"\"]")).click();
 		}catch (Exception e) {
-			throw new FlightNotAvailableException("Flight Not Available " + e.getMessage());
+			throw new FlightNotAvailableException(e.getMessage());
 		}
 	}	
 	

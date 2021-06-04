@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 public interface IIndexPageObject {
 
+	By makemyTripBy = By.xpath("//a[@data-cy='mmtLogo']");
 	By loginOrCreateAccBtnBy = By.xpath("//li[@data-cy=\"account\"]");
 	By loginOrCreatePopUpBy = By.xpath("//p[contains(@class,'login')]");
 	By flightsBtnBy = By.xpath("//li[@data-cy='menu_Flights']");

@@ -2,24 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-23T17:29:47 IST" name="Surefire suite" finished-at="2021-04-23T17:30:12 IST" duration-ms="25579">
+  <suite started-at="2021-06-04T16:13:52 IST" name="com.htc.makemytrip" finished-at="2021-06-04T16:15:18 IST" duration-ms="85852">
     <groups>
     </groups>
-    <test started-at="2021-04-23T17:29:47 IST" name="Surefire test" finished-at="2021-04-23T17:30:12 IST" duration-ms="25579">
-      <class name="com.htc.makemytrip.base.BaseTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.makemytrip.base.BaseTest@2f4948e4]" started-at="2021-04-23T17:29:47 IST" name="setUp" finished-at="2021-04-23T17:30:09 IST" duration-ms="22110" status="PASS">
+    <test started-at="2021-06-04T16:13:52 IST" name="MakeMyTrip WebPage Functionality Test" finished-at="2021-06-04T16:15:18 IST" duration-ms="85852">
+      <class name="com.htc.makemytrip.test.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.htc.makemytrip.test.LoginTest@6e0f5f7f]" started-at="2021-06-04T16:13:53 IST" name="setUp" finished-at="2021-06-04T16:14:15 IST" duration-ms="21967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testcase1()[pri:0, instance:com.htc.makemytrip.base.BaseTest@2f4948e4]" started-at="2021-04-23T17:30:09 IST" name="testcase1" finished-at="2021-04-23T17:30:09 IST" duration-ms="3" status="PASS">
+        <test-method signature="loginTest(java.util.Map)[pri:0, instance:com.htc.makemytrip.test.LoginTest@6e0f5f7f]" started-at="2021-06-04T16:14:21 IST" name="loginTest" data-provider="Data" finished-at="2021-06-04T16:15:15 IST" duration-ms="53800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{MobileOrEmail=8190916561, OTP=123456}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.makemytrip.base.BaseTest@2f4948e4]" started-at="2021-04-23T17:30:09 IST" name="tearDown" finished-at="2021-04-23T17:30:12 IST" duration-ms="3091" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.htc.makemytrip.test.LoginTest@6e0f5f7f]" started-at="2021-06-04T16:15:16 IST" name="tearDown" finished-at="2021-06-04T16:15:18 IST" duration-ms="1632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.htc.makemytrip.base.BaseTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+      </class> <!-- com.htc.makemytrip.test.LoginTest -->
+    </test> <!-- MakeMyTrip WebPage Functionality Test -->
+  </suite> <!-- com.htc.makemytrip -->
 </testng-results>

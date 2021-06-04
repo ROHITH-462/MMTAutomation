@@ -10,56 +10,63 @@ import com.htc.makemytrip.pageObjects.ICabBookingPageObject;
 public class CabBookingPage extends BasePage implements ICabBookingPageObject {
 
 	Logger log = Logger.getLogger(CabBookingPage.class);
-	
+
 	public CabBookingPage(WebDriver driver) {
 		super(driver);
 	}
-	
+
 	public void selectCarModel(String carModel) {
-//		clickElement(carModelBy);
+		//		clickElement(carModelBy);
 		selectCabModel(carModel);
 		log.info("Car Model Selected");
 	}
-	
+
 	public void clickBookNow() {
-		clickElement(bookNowBy);
+
+		String cabAvailable = cabAvailability();
+		System.out.println("Cab Price Label: " + cabAvailable);
+		if(cabAvailable.equalsIgnoreCase("view prices")) {
+			clickElement(viewPricesBy);
+			clickElement(bookBy);
+		} else {
+			clickElement(bookNowBy);
+		}
 		log.info("Book Now Button clicked");
 	}
-	
+
 	public void selectCab() {
 		clickElement(selectCabBy);
 		log.info("Selecting Cab");
 	}
-	
+
 	public void clickBook() {
 		clickElement(bookBy);
 		log.info("Clicking BookNow");
 	}
-	
+
 	public void covidSafetyCheckBox() {
 		clickElement(covidSafetyCheckBoxBy);
 		log.info("Covid Safety CheckBox Clicked");
 	}
-	
+
 	public void covidSafetyContinue() throws InterruptedException {
 		clickElement(covidSafetyContinueBy);
-		log.info("Covid Safety Continue Button Clicked");
-		Thread.sleep(5000);		
+		log.info("Covid Safety Continue Button Clicked");		
 	}
-	
+
 	public void selectingCab(String carModel) throws Exception {
 		try {
-		selectCarModel(carModel);
-		clickBookNow();
-		covidSafetyCheckBox();
-		covidSafetyContinue();
+			selectCarModel(carModel);
+			clickBookNow();
+			covidSafetyCheckBox();
+			covidSafetyContinue();
 		}catch (Exception e) {
 			throw new CarModelNotFoundException("Cab Not Found "+e.getMessage());
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 
 }

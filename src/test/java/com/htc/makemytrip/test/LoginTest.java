@@ -15,7 +15,7 @@ public class LoginTest extends BaseTest{
 		try {
 			
 			childTest = test.createNode("Login Method test");
-			
+			indexPage.clickMMTLogo();
 			indexPage.clickCreateAccBtn();
 			childTest.pass("Clicked Login Button");
 			
@@ -26,7 +26,7 @@ public class LoginTest extends BaseTest{
 		} catch (Exception e) {
 			e.printStackTrace();
 			Assert.fail(e.getMessage());
-		}
+		}	
 	}
 
 }
