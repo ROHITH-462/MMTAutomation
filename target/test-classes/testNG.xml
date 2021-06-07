@@ -7,7 +7,7 @@
 			class-name="com.htc.makemytrip.listeners.TestListener" />
 	</listeners>
 
-	<test name="MakeMyTrip WebPage Functionality Test">
+	<test name="MakeMyTrip WebPage Functionality Test" parallel = "classes">
 
 		<classes>
 			<!-- <class name="com.htc.makemytrip.test.NewAccountCreationTest" /> -->
